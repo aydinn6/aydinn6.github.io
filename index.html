@@ -48,8 +48,7 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
+								<li><a href="#work">Works</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -60,46 +59,72 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>I have been employed as a software development engineer in the defense industry, where I contribute to safety-critical avionics projects. Throughout my career, I have consistently applied object-oriented programming (OOP) principles using MATLAB, C++, C#, and Python, with a specific emphasis on creating efficient and well-documented software solutions. My commitment to high standards has enabled me to develop software that meets rigorous safety and performance requirements, ensuring reliability in critical systems. In addition to my professional experience, I hold a bachelor's degree in Electrical and Electronics Engineering from Ankara University, where I graduated with a GPA of 3.72. I am currently pursuing a master's degree in the same field at Gazi University, which allows me to deepen my knowledge and stay abreast of the latest technological advancements.</p>
-								<p>Simultaneously, I have pursued academic interests in image processing, signal processing, artificial intelligence, machine learning, and object detection theories, <a href="#work">conducting research</a> in these areas to enhance my skill set and contribute to innovative solutions. This research not only complements my professional work but also fuels my passion for technology and problem-solving. Furthermore, I possess extensive experience in the entire software lifecycle process and have collaborated effectively with teams spanning various disciplines. This collaborative approach fosters an environment of innovation and excellence, enabling me to deliver high-quality results in every project I undertake.</p>
-							</article>
-
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/tomat.jpg" alt="" /></span>
-								<p>In our study, we focused on the accurate detection of tomatoes grown in greenhouses, which is crucial for timely harvesting. We aimed to differentiate ripe tomatoes from unripe ones, addressing challenges like insufficient light, occlusion, and overlapping that can hinder detection. Recognizing that manual detection in large greenhouses is time-consuming, we explored high-performance automatic detection methods suitable for greenhouse robots.</p>
-								<p>We compared two feature extraction techniques: Histogram of Oriented Gradients (HOG) and Local Binary Patterns (LBP), alongside two popular machine learning classifiers, Support Vector Machines (SVM) and k-Nearest Neighbors (kNN). We evaluated the performance of HOG and LBP features both individually and in combination, analyzing the effectiveness of each approach.</p>
-								<p>To further enhance detection accuracy, we implemented a post-processing stage that utilized color information to reduce false positives. This comprehensive approach allowed for improved tomato detection and counting, ultimately contributing to more efficient greenhouse management.<p>
+								    <h2 class="major">Works</h2>
+									<div class="project" style="margin-bottom: 20px;">
+										<span class="image main" onclick="toggleDetails('project1')" style="position: relative;">
+											<img src="images/tomat.jpg" alt="" />
+											<h3 class="project-title" style="position: absolute; bottom: 10px; left: 10px; color: white; background-color: rgba(0, 0, 0, 0.6); padding: 5px; border-radius: 5px;">
+											Mature Tomato Detection Project (Click to see details)
+											</h3>
+										</span>
+										<div class="details" id="project1" style="display: none;">
+											<h3>Tomato Detection</h3>
+											<p>In our study, we focused on the accurate detection of tomatoes grown in greenhouses, which is crucial for timely harvesting. We aimed to differentiate ripe tomatoes from unripe ones, addressing challenges like insufficient light, occlusion, and overlapping that can hinder detection. Recognizing that manual detection in large greenhouses is time-consuming, we explored high-performance automatic detection methods suitable for greenhouse robots.</p>
+											<p>We compared two feature extraction techniques: Histogram of Oriented Gradients (HOG) and Local Binary Patterns (LBP), alongside two popular machine learning classifiers, Support Vector Machines (SVM) and k-Nearest Neighbors (kNN). We evaluated the performance of HOG and LBP features both individually and in combination, analyzing the effectiveness of each approach.</p>
+											<p>To further enhance detection accuracy, we implemented a post-processing stage that utilized color information to reduce false positives. This comprehensive approach allowed for improved tomato detection and counting, ultimately contributing to more efficient greenhouse management.</p>
+										</div>
+									</div>
+									<div class="project" style="margin-bottom: 20px;">
+										<span class="image main" onclick="toggleDetails('project2')" style="position: relative;">
+											<img src="images/threeWheelCar.jpg" alt="" />
+											<h3 class="project-title" style="position: absolute; bottom: 10px; left: 10px; color: white; background-color: rgba(0, 0, 0, 0.6); padding: 5px; border-radius: 5px;">
+											Three Wheel Car
+											</h3>
+										</span>
+										<div class="details" id="project2" style="display: none;">
+											<h3>Three Wheel Car</h3>
+											<p>Description for the second project goes here.</p>
+											<p>Description for the second project goes asdlkasdlasdşjaslhere.</p>
+										</div>
+									</div>
 							</article>
-
+							
+							<script>
+							function toggleDetails(projectId) {
+								const details = document.getElementById(projectId);
+								if (details.style.display === "none") {
+									details.style.display = "block";
+								} else {
+									details.style.display = "none";
+								}
+							}
+							</script>
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<span class="image main"><img src="images/aiwavionic.png" alt="" /></span>
+								<p>I have been employed as a software development engineer in the defense industry, where I contribute to safety-critical avionics projects. Throughout my career, I have consistently applied object-oriented programming (OOP) principles using MATLAB, C++, C#, and Python, with a specific emphasis on creating efficient and well-documented software solutions. My commitment to high standards has enabled me to develop software that meets rigorous safety and performance requirements, ensuring reliability in critical systems. In addition to my professional experience, I hold a bachelor's degree in Electrical and Electronics Engineering from Ankara University, where I graduated with a GPA of 3.72. I am currently pursuing a master's degree in the same field at Gazi University, which allows me to deepen my knowledge and stay abreast of the latest technological advancements.</p>
+								<p>Simultaneously, I have pursued academic interests in image processing, signal processing, artificial intelligence, machine learning, and object detection theories, <a href="#work">conducting research</a> in these areas to enhance my skill set and contribute to innovative solutions. This research not only complements my professional work but also fuels my passion for technology and problem-solving. Furthermore, I possess extensive experience in the entire software lifecycle process and have collaborated effectively with teams spanning various disciplines. This collaborative approach fosters an environment of innovation and excellence, enabling me to deliver high-quality results in every project I undertake.</p>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form method="post" action="https://formspree.io/f/mqakzgaz" enctype="multipart/form-data">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email" required/>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
@@ -108,10 +133,9 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/aydinn6/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/aydinn6" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://orcid.org/0000-0002-4026-9739" class="icon fa-orcid"><span class="label">ORCID</span></a></li>
 								</ul>
 							</article>
 
@@ -173,10 +197,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</ol>
 									<h4>Icons</h4>
 									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://www.linkedin.com/in/aydinn6/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/aydinn6" class="icon fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://orcid.org/0000-0002-4026-9739" class="icon fa-orcid"><span class="label">ORCID</span></a></li>
 									</ul>
 
 									<h4>Actions</h4>
@@ -361,7 +384,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p>Ankara, Turkey</p>
 					</footer>
 
 			</div>
