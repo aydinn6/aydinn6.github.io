@@ -10,7 +10,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.logo {
+				width: 150px; 
+				height: 150px; 
+				border-radius: 50%; 
+				overflow: hidden; 
+				margin: 0 auto;
+			    display: flex; 
+				align-items: center; 
+				justify-content: center; 
+				z-index: 100;
+				position: relative;
+			}
+			.logo img {
+				width: 100%; 
+				height: auto; 
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -54,9 +71,10 @@
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<span class="image main"><img src="images/tomat.jpg" alt="" /></span>
+								<p>In our study, we focused on the accurate detection of tomatoes grown in greenhouses, which is crucial for timely harvesting. We aimed to differentiate ripe tomatoes from unripe ones, addressing challenges like insufficient light, occlusion, and overlapping that can hinder detection. Recognizing that manual detection in large greenhouses is time-consuming, we explored high-performance automatic detection methods suitable for greenhouse robots.</p>
+								<p>We compared two feature extraction techniques: Histogram of Oriented Gradients (HOG) and Local Binary Patterns (LBP), alongside two popular machine learning classifiers, Support Vector Machines (SVM) and k-Nearest Neighbors (kNN). We evaluated the performance of HOG and LBP features both individually and in combination, analyzing the effectiveness of each approach.</p>
+								<p>To further enhance detection accuracy, we implemented a post-processing stage that utilized color information to reduce false positives. This comprehensive approach allowed for improved tomato detection and counting, ultimately contributing to more efficient greenhouse management.<p>
 							</article>
 
 						<!-- About -->
